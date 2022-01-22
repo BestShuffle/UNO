@@ -1,0 +1,25 @@
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="fr.uno.client.graphic.controller.GameFrameController">
+    <left>
+        <VBox fx:id="leftPlayerCardsContainer" alignment="center">
+        </VBox>
+    </left>
+    <top>
+        <Label fx:id="labelHasToPlay" style="-fx-font: NORMAL 20 Tahoma;">
+        </Label>
+    </top>
+    <center>
+        <HBox alignment="center">
+            <ImageView fx:id="imageViewCardsPile"/>
+            <ImageView fx:id="imageViewLastPlayedCard"/>
+        </HBox>
+    </center>
+    <bottom>
+        <HBox fx:id="mainPlayerCardsContainer" alignment="center">
+        </HBox>
+    </bottom>
+</BorderPane>
